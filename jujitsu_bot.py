@@ -41,7 +41,15 @@ async def recherche_gps(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 
 async def afficher_arret(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     indentifiant = update.message.text[2:]
+    prochains_departs = rechercher_arrets(f'/stationboard?id={indentifiant}')
     await update.message.reply_text("Afficher arret" + indentifiant)
+
+def prochains_departs(indentifiant):
+    data = appeler_openData(f'/stationboard?id={indentifiant}')
+    stationboard = data['stationboard']
+    for depart in stationboard:
+        print(depart)
+    return f"prochain départ depuis {indentifiant}"
 
 app = ApplicationBuilder().token(token).build()
 
