@@ -12,7 +12,7 @@ Le bot permet d'avoir sur telegram les arrêts de tpg proche de soi. Ainsi que d
    
 ## 🙇 Acknowledgements      
 #### Nathanael Khodl
-- Linkedin : [Link](https://www.linkedin.com/in/nathanaelkhodl/)
+- [Linkedin :](https://www.linkedin.com/in/nathanaelkhodl/)
 
                     
 ## 🙇 Author
